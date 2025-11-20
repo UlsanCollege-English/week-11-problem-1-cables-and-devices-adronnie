@@ -1,3 +1,7 @@
+# Temporary path fix for testing
+import sys, os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 import pytest
 from hw01.main import build_graph, degree_dict
 
