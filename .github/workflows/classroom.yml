@@ -13,6 +13,8 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
+    - name: Install dependencies
+      run: pip install -r requirements.txt
     - name: tests
       id: tests
       uses: classroom-resources/autograding-python-grader@v1
